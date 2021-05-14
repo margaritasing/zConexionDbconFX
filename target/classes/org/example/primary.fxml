@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.HBox?>
+<VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.PrimaryController">
+   <children>
+      <Label fx:id="titulo" alignment="TOP_CENTER" text="Listado de clientes" textAlignment="CENTER" textFill="#542121" underline="true">
+         <font>
+            <Font size="27.0" />
+         </font></Label>
+      <TableView fx:id="tabla" prefHeight="210.0" prefWidth="323.0">
+         <columns>
+            <TableColumn fx:id="nombreCol" minWidth="100.0" prefWidth="152.99996948242188" style="-fx-alignment: CENTER;" text="Nombre" />
+            <TableColumn fx:id="cargoCol" minWidth="43.0" prefWidth="77.0" text="Cargo" />
+            <TableColumn fx:id="empresaCol" minWidth="50.0" prefWidth="100.0" text="Empresa" />
+         </columns>
+      </TableView>
+      <HBox alignment="BOTTOM_RIGHT" fillHeight="false" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="primaryButton" alignment="BOTTOM_RIGHT" defaultButton="true" onAction="#switchToSecondary" opacity="0.89" text="Siguiente" />
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
